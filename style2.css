@@ -1,0 +1,225 @@
+
+
+/* animation */
+@keyframes 더듬이 {
+    from {
+        transform: rotate(10deg) translate(10px);
+    }
+    to {
+        transform: rotate(3deg) ;
+    }
+}
+
+@keyframes 동공지진1 {
+    from {
+        transform: translate(10px);
+    }
+    to {
+        transform: translate(-10px);
+    }            
+}
+
+@keyframes 동공지진2 {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(-10px);
+    }            
+}
+
+@keyframes 동공지진3 {
+    from {
+        transform: translate(-10px);
+    }
+    to {
+        transform: translate(10px);
+    }            
+}
+
+/* reset */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* design */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./jeremy-thomas-4dpAqfTbvKA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.feeler {
+    transition: all 2s;
+    transform-origin: bottom;
+    animation: 더듬이 .7s infinite alternate;
+}
+
+.alien {
+    position: relative;
+    top: 100px;
+    margin: 50px auto;
+    width: 400px;
+    height: 350px;
+    /* border: solid 3px black; */
+}
+
+.top {
+    position: absolute;
+    top: 25px;
+    left: 185px;
+    width: 25px;
+    height: 25px;
+    border: solid 3px #8fce00;
+    border-radius: 50%;
+    background-color: #bff25c;
+    z-index: 1;
+
+}
+
+.stick {
+    position: absolute;
+    top: 39px;
+    left: 188px;
+    width: 20px;
+    height: 90px;
+    border: solid 3px #8fce00;;
+    border-radius: 54% 46% 49% 51% / 100% 100% 0% 0% ;
+    background-color: #bff25c;
+}
+
+.left-ear {
+    position: absolute;
+    top: 111px;
+    left: 34px;
+    width: 37px;
+    height: 122px;
+    border: 3px solid #8fce00;
+    border-radius: 38% 62% 58% 42% / 27% 74% 26% 73% ;
+    transform: rotate(-4deg);
+    background-color: #bff25c;
+}
+
+.right-ear {
+    position: absolute;
+    top: 111px;
+    right: 35px;
+    width: 37px;
+    height: 122px;
+    border: 3px solid #8fce00;
+    border-radius: 38% 62% 58% 42% / 73% 27% 73% 27% ;
+    transform: rotate(188deg);
+    background-color: #bff25c;
+}
+
+.face {
+    position: absolute;
+    top: 120px;
+    left: 58px;
+    width: 280px;
+    height: 197px;
+    border: solid 3px #8fce00;
+    border-radius: 48% 52% 46% 54% / 60% 60% 40% 40% ;
+    background-color: #bff25c;
+}
+
+.eye1 {
+    position: absolute;
+    top: 50px;
+    left: 53px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+}
+.eye2 {
+    position: absolute;
+    top: 43px;
+    left: 112px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+}
+.eye3 {
+    position: absolute;
+    top: 52px;
+    right: 44px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.pupil1 {
+    position: absolute;
+    top: 19px;
+    left: 17px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    animation: 동공지진1 .7s infinite alternate;
+}
+
+.pupil2 {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    animation: 동공지진2 .7s infinite alternate;
+}
+
+.pupil3 {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    animation: 동공지진3 .7s infinite alternate;
+}
+
+.mouth {
+    position: absolute;
+    bottom: 33px;
+    right: 95px;
+    width: 72px;
+    height: 25px;
+    border-radius: 48% 52% 46% 54% / 34% 32% 68% 66% ;
+    background-color: black;
+}
+
+.tongue {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    width: 42px;
+    height: 10px;
+    border-radius: 48% 52% 46% 54% / 34% 32% 68% 66% ;
+    background-color: lightcoral;
+    z-index: 1;
+}
+
+
+/* .ment {
+    position: absolute;
+    bottom: -80px;
+    left: 6px;
+    font-family: 'Pangolin', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #fff005;
+} */
